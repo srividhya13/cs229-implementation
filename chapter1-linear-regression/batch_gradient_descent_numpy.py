@@ -1,7 +1,7 @@
 import numpy as np
 from load_student_data import load_student_data
 
-def batch_gradient_descent(X, y, alpha=0.01, iterations=1000):
+def batch_gradient_descent(X, y, alpha=0.0001, iterations=1000):
     m, n = X.shape
     theta = np.zeros((n, 1))
     cost_history = []
